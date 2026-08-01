@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/QphoX
+note: >-
+  QphoX publishes no client SDK for a web API (it exposes no web API). These are first-party
+  open-source Python instrument-control libraries (QCoDeS drivers) for operating QphoX hardware,
+  distributed via GitHub only (not published to PyPI/npm as of this pass). Verified 404 on
+  PyPI for cryoswitchcontroller / opticalcontrolsystem / qphox and npm for qphox.
+packages:
+- language: python
+  registry: github
+  name: CryoSwitchController
+  url: https://github.com/QphoX/CryoSwitchController
+  install: git clone https://github.com/QphoX/CryoSwitchController
+  description: Python controller library for the QphoX CryoSwitch Control Module (cryogenic latching switch actuator).
+  license: BSD-4-Clause
+  official: true
+- language: python
+  registry: github
+  name: OpticalControlSystem
+  url: https://github.com/QphoX/OpticalControlSystem
+  install: git clone https://github.com/QphoX/OpticalControlSystem
+  description: QCoDeS wrapper to operate the QphoX Optical Control System.
+  official: true

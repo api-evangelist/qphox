@@ -1,22 +1,65 @@
 aid: qphox
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/qphox.png
 name: Qphox
-description: Qphox is a company surfaced as a portfolio company of speedinvest and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  QphoX is a Delft, Netherlands-based quantum technology company founded in 2021 and spun out of
+  Delft University of Technology (TU Delft). It develops quantum networking hardware to tackle the
+  scaling challenges of quantum computing, centered on its Quantum Transducer, described as the
+  first quantum interface between single optical and single microwave photons, enabling optical
+  interconnects between superconducting quantum processors. Alongside the transducer, QphoX offers
+  an Optical Control System for delivering RF signals into extreme cryogenic environments and a
+  CryoSwitch Control Module for use with Radiall's cryogenic latching actuator. The company
+  publishes open-source Python instrument-control libraries (QCoDeS drivers) on GitHub for operating
+  its hardware. QphoX is backed by Speedinvest. QphoX exposes no public web API or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/qphox/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - speedinvest
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: hardware-company-no-api
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Quantum Computing
+- Quantum Networking
+- Hardware
+- Photonics
+- Cryogenics
+- Deep Tech
+- Instrument Control
 apis: []
+common:
+- type: DomainSecurity
+  url: security/qphox-domain-security.yml
+- type: Website
+  url: https://www.qphox.eu
+- type: GitHubOrganization
+  url: https://github.com/QphoX
+- type: Blog
+  url: https://qphox.eu/news/
+- type: Packages
+  url: packages/qphox-packages.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
